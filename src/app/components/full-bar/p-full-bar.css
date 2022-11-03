@@ -1,0 +1,55 @@
+/***** Full Bar *****/
+.p-full-bar {
+  z-index: 999;
+  position: fixed;
+  box-shadow: unset;
+}
+.p-full-bar.p-full-bar-top {
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+.p-full-bar.p-full-bar-bottom {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+.p-full-bar.p-full-bar-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 80px;
+}
+.p-full-bar.p-full-bar-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 80px;
+}
+.p-full-bar.mini.p-full-bar-top,
+.p-full-bar.mini.p-full-bar-bottom { height: 40px }
+.p-full-bar.small.p-full-bar-top,
+.p-full-bar.small.p-full-bar-bottom { height: 60px }
+.p-full-bar.big.p-full-bar-top,
+.p-full-bar.big.p-full-bar-bottom { height: 100px }
+.p-full-bar.large.p-full-bar-top,
+.p-full-bar.large.p-full-bar-bottom { height: 120px }
+.p-full-bar.mini.p-full-bar-right,
+.p-full-bar.mini.p-full-bar-left { width: 40px }
+.p-full-bar.small.p-full-bar-right,
+.p-full-bar.small.p-full-bar-left { width: 60px }
+.p-full-bar.big.p-full-bar-right,
+.p-full-bar.big.p-full-bar-left { width: 100px }
+.p-full-bar.large.p-full-bar-right,
+.p-full-bar.large.p-full-bar-left { width: 120px }
+/* .p-full-bar.top { animation: p-top-alert 0.4s normal both }
+.p-full-bar.bottom { animation: p-bottom-alert 0.4s normal both }
+.p-full-bar.right { animation: p-side-modal-right 0.4s normal both }
+.p-full-bar.left { animation: p-side-modal-left 0.4s normal both } */
+/***** Full Bar - END *****/

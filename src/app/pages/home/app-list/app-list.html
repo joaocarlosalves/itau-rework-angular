@@ -1,0 +1,21 @@
+<div class="full flex centered">
+  <div class="container full">
+    <div class="full mb20px">
+      <h4 class="full block fs30px mb10px bold">resolva tudo pelos apps</h4>
+      <span class="full fs20px">com os aplicativos do banco itaú, você faz tudo pelo seu celular!</span>
+    </div>
+
+    <div class='flex full space-between'>
+      <div *ngFor="let app of apps" class="flex column gap-10px center">
+        <img src="assets/images/apps/{{ app.image }}.png" />
+        <span class="fs16px">{{ app.title }}</span>
+      </div>
+    </div>
+
+    <div class='full flex centered mt50px mb40px'>
+      <p-button
+        rounded bold large font-size="25px" padding="20px 50px" background="blue" hover-background="white"
+        border="1px solid blue" color="white" hover-color="blue">conheça os canais</p-button>
+    </div>
+  </div>
+</div>

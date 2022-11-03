@@ -1,0 +1,9 @@
+.banner {
+  height: 65%;
+  max-height: 600px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.banner-text { margin-top: 300px }

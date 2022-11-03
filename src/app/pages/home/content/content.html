@@ -1,0 +1,102 @@
+<section class="relative flex full centered mt40px">
+  <div class="container full">
+    <h6 class='fs30px block b full mb20px'>resolva as questões do dia a dia</h6>
+
+    <div class='flex full gap-15px space-between'>
+      <a *ngFor="let box of questBoxes"
+        class="transition-02s pointer p20px"
+        PootaBorder="1px solid dark"
+        hover-border="1px solid blue"
+        border-radius="15px"
+        PootaBackground="white"
+        hover-background="blue"
+        PootaColor="dark"
+        hover-color="yellow-dark">
+        <span class="block full fs25px b mb20px {{ box.icon }}"></span>
+
+        <span class='block full fs17px b mb10px'>{{ box.title }}</span>
+
+        <span class='block full fs15px'>{{ box.text }}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="relative flex full centered mt50px">
+  <div class="container full">
+    <h6 class='fs30px block b full mb10px'>contrate nossos produtos on-line</h6>
+    <span class='fs18px block full mb20px color-gray'>confira as soluções que o banco Itaú oferece para você.</span>
+
+    <div class='full flex space-between mb25px overflow' PootaBorder="1px solid gray" border-radius="15px">
+      <div class="p20px">
+        <div class="flex center gap-5px mb10px">
+          <span class='icon-itaufonts_cartao fs28px'></span>
+          <span class='fs16px f-300 i'>cartões</span>
+        </div>
+
+        <h6 class='fs22px block b full mb5px color-amber'>o cartão de crédito ideal</h6>
+
+        <span class="block fs18px w-80 word-break mb35px">
+          só quem tem mais de 70 opções de cartões pode ajudar a escolher o cartão que dá match com você.
+        </span>
+
+        <p-button
+          rounded font-size="20px" background="orange" hover-background="white"
+          border="1px solid orange" color="white" hover-color="orange">peça já o seu</p-button>
+      </div>
+
+      <img src="assets/images/cards.png" class="rounded" />
+    </div>
+
+
+    <div class='flex full flex-wrap space-between gap-15px'>
+      <div *ngFor="let box of contrateBoxes"
+        class='half flex space-between mb10px overflow' PootaBorder="1px solid gray" border-radius="15px">
+        <div class="p20px">
+          <div class="flex center gap-5px mb10px">
+            <span class='{{ box.icon }} fs28px'></span>
+            <span class='fs16px f-300 i'>{{ box.iconText }}</span>
+          </div>
+
+          <h6 class='fs22px block b full mb5px color-amber'>{{ box.title }}</h6>
+
+          <span class="block fs18px w-80 word-break mb35px">{{ box.text }}</span>
+
+          <p-button
+            rounded font-size="20px" background="orange" hover-background="white"
+            border="1px solid orange" color="white" hover-color="orange">{{ box.button }}</p-button>
+        </div>
+
+        <img src="assets/images/{{box.image}}.png" class="rounded" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="relative flex full centered mt50px">
+  <div class="container full">
+    <h6 class='fs30px block b full mb20px'>confira nossos cartões de crédito mais pedidos da semana</h6>
+
+    <div class='flex full flex-wrap space-between gap-15px'>
+      <div *ngFor="let box of cartoesBoxes"
+        class='box-4 flex column space-between mb10px p20px overflow' PootaBorder="1px solid gray" border-radius="15px">
+        <div class="flex space-between">
+          <div>
+            <h6 class='fs18px block b full mb5px color-amber'>{{ box.title }}</h6>
+            <span class="block fs16px w-80 word-break mt15px">{{ box.text }}</span>
+          </div>
+
+          <img src="assets/images/{{box.image}}.png" class="rounded mr-20px" />
+        </div>
+
+        <div class='full flex centered pt10px'>
+          <p-button big
+          rounded font-size="20px" padding="0 60px" background="orange" hover-background="white"
+          border="1px solid orange" color="white" hover-color="orange">{{ box.button }}</p-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

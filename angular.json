@@ -41,6 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "preserveSymlinks": true,
             "outputPath": "dist/itau",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -51,7 +52,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/itau.css"
             ],
             "scripts": []
           },

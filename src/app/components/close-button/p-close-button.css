@@ -1,0 +1,11 @@
+/***** Icon Button *****/
+.p-close-button.mini { width: 22px; height: 22px }
+.p-close-button.small { width: 26px; height: 26px }
+.p-close-button.medium { width: 30px; height: 30px }
+.p-close-button.big { width: 36px; height: 36px }
+.p-close-button.large { width: 42px; height: 42px }
+.p-close-button.no-padding { padding: unset; height: auto }
+.p-close-button.no-padding span { height: auto }
+.p-close-button.no-border { border: unset }
+.p-close-button.no-background, .p-close-button.no-bg { background: transparent }
+/***** Icon Button - END *****/

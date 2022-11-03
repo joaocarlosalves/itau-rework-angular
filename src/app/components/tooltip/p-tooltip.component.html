@@ -1,0 +1,20 @@
+<div class='p-tooltip inline-flex relative'>
+  <a #tip class='{{ side }} {{ css }}'
+    [ngClass]="classList"><ng-content></ng-content></a>
+
+  <span *ngIf='onHover' class='absolute'
+    [PootaColor]="cl"
+    [PootaBackground]="bg"
+    [PootaBorder]="bd"
+    [rounded]="rd"
+    [full-rounded]="frd"
+    [solid]="sl"
+    [dotted]="dt"
+    [dashed]="ds"
+    [border-width]="bdWd"
+    [border-style]="bdSt"
+    [border-color]="bdCl"
+    [border-radius]="bdRd"
+    [ngStyle]='tooltipStyles'
+    [ngClass]='!offHover ? setAnimIn() : setAnimOut()'>{{ text }}</span>
+</div>

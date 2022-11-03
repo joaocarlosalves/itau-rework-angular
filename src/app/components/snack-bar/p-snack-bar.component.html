@@ -1,0 +1,24 @@
+<div #snackbar
+  class="p-snack-bar fixed flex z-index-99 center space-between {{ css }}"
+  PootaColor
+  [color]="color"
+  [rounded]="rounded"
+  [full-rounded]="fullRounded"
+  [PootaBorder]="border"
+  [solid]="solid"
+  [dotted]="dotted"
+  [dashed]="dashed"
+  [border-width]="borderWidth"
+  [border-style]="borderStyle"
+  [border-color]="borderColor"
+  [border-radius]="borderRadius"
+  [PootaBackground]="background"
+  [ngStyle]='getStyles()'
+  [ngClass]="classList">
+  <div class="flex row-gap-10px {{ dir != '' ? dir : 'space-between' }}">
+    <p-icon *ngIf='icon != ""' [solid]='!regIcon && !v4Icon' [regular]='regIcon' [v4]='v4Icon' [icon]='icon'></p-icon>
+    <div>{{ text }}<ng-content></ng-content></div>
+  </div>
+
+  <button *ngIf='!noButton' (click)='setClose()'>{{ buttonText || 'Close' }}</button>
+</div>

@@ -1,0 +1,7 @@
+/***** Snack Bar *****/
+.p-snack-bar { min-width: 400px; padding: 15px 20px }
+.p-snack-bar button { opacity: .8; font-size: 13px; font-weight: normal }
+.p-snack-bar span, .p-snack-bar button { color: inherit }
+.p-snack-bar.p-snack-bar-bottom, .p-snack-bar.p-snack-bar-top { margin-left: -200px; left: 50% }
+.p-snack-bar.p-snack-bar-right, .p-snack-bar.p-snack-bar-left { margin-top: -30px; top: 50% }
+/***** Snack Bar - END *****/

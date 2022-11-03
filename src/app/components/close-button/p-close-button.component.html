@@ -1,0 +1,26 @@
+<button
+  type='button'
+  class="p-close-button flex centered pointer transition-02s {{ css }}"
+  [disabled]='dis'
+  [PootaColor]="cl"
+  [hover-color]="hvCl"
+  [PootaBackground]="bg"
+  [hover-background]="hvBg"
+  [PootaBorder]="bd"
+  [rounded]="rd"
+  [full-rounded]="frd"
+  [border-width]="bdWd"
+  [border-style]="bdSt"
+  [border-color]="bdCl"
+  [border-radius]="bdRd"
+  [hover-border]="hvBd"
+  [hover-border-width]="hvBdWd"
+  [hover-border-style]="hvBdSt"
+  [hover-border-color]="hvBdCl"
+  [hover-border-radius]="hvBdRd"
+  (click)='!dis && clicked.emit(true)'
+  [ngClass]='setClassList()'
+  [ngStyle]='getStyles()'>
+  <p-icon solid icon='close'></p-icon>
+</button>
+

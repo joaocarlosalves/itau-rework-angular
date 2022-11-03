@@ -1,0 +1,23 @@
+/***** Buttons *****/
+.p-button { transition: all .2s ease; opacity: 1 }
+.p-button.rounded { border-radius: 6px }
+.p-button.full-rounded { border-radius: 1000px }
+.p-button.left { flex-direction: row-reverse }
+.p-button.right { flex-direction: row }
+.p-button p-icon i { font-weight: normal }
+.p-button.justify-center { justify-content: center }
+.p-button, .p-button.regular { gap: 0 12px; font-size: 21px; padding: 0 20px; height: 40px }
+.p-button.mini { gap: 0 5px; font-size: 13px; padding: 0 10px; height: 25px }
+.p-button.small { gap: 0 8px; font-size: 15px; padding: 0 13px; height: 30px }
+.p-button.medium { gap: 0 10px; font-size: 18px; padding: 0 15px; height: 35px }
+.p-button.big { gap: 0 13px; font-size: 23px; padding: 0 25px; height: 45px }
+.p-button.large { gap: 0 16px; font-size: 28px; padding: 28px 30px; height: 50px }
+.p-button.full { gap: 0 20px; font-size: 24px; padding: 0 45px; height: max-content }
+.p-button:not(.big) p-icon, .p-button:not(.large) p-icon { transform: scale(.8) }
+.p-button.large p-icon, .p-button.big p-icon { transform: scale(.9) }
+.p-button span { color: inherit }
+.p-button.no-padding { padding: unset; height: auto!important }
+.p-button.no-padding span { height: auto!important }
+.p-button.no-border { border: unset!important }
+.p-button.no-background, .p-button.no-bg { background: transparent!important }
+/***** Buttons - END *****/

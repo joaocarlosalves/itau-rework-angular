@@ -1,0 +1,7 @@
+export * from './p-background.directive'
+export * from './p-border.directive'
+export * from './p-color.directive'
+export * from './p-font.directive'
+export * from './p-gradient.directive'
+export * from './p-transition.directive'
+export * from './p-transition.directive'

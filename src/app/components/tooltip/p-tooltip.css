@@ -1,0 +1,108 @@
+.p-tooltip span {
+  width: max-content;
+  height: max-content;
+  padding: 5px 15px;
+  transition: all .2s ease-in-out;
+  z-index: 999;
+  opacity: 0
+}
+@keyframes p-top-tooltip-in {
+  0% { transform: translate(0, -90%) }
+  100% { opacity: 1; transform: translate(0, -125%) }
+}
+@keyframes p-top-tooltip-out {
+  0% { opacity: 1; transform: translate(0, -125%) }
+  100% { transform: translate(0, -90%) }
+}
+@keyframes p-top-center-tooltip-in {
+  0% { transform: translate(-50%, -90%); left: 0; margin-left: 50% }
+  100% { opacity: 1; transform: translate(-50%, -125%); left: 0; margin-left: 50% }
+}
+@keyframes p-top-center-tooltip-out {
+  0% { opacity: 1; transform: translate(-50%, -125%); left: 0; margin-left: 50% }
+  100% { transform: translate(-50%, -90%); left: 0; margin-left: 50% }
+}
+@keyframes p-bottom-tooltip-in {
+  0% { transform: translate(0, 90%) }
+  100% { opacity: 1; transform: translate(0, 100%) }
+}
+@keyframes p-bottom-tooltip-out {
+  0% { opacity: 1; transform: translate(0, 100%) }
+  100% { transform: translate(0, 90%) }
+}
+@keyframes p-bottom-center-tooltip-in {
+  0% { transform: translate(-50%, 90%); left: 0; margin-left: 50% }
+  100% { opacity: 1; transform: translate(-50%, 100%); left: 0; margin-left: 50% }
+}
+@keyframes p-bottom-center-tooltip-out {
+  0% { opacity: 1; transform: translate(-50%, 100%); left: 0; margin-left: 50% }
+  100% { transform: translate(-50%, 90%); left: 0; margin-left: 50% }
+}
+@keyframes p-right-tooltip-in {
+  0% { transform: translate(95%, 0); top: -100%; margin-top: 50% }
+  100% { opacity: 1; transform: translate(107%, 0); top: -100%; margin-top: 50% }
+}
+@keyframes p-right-tooltip-out {
+  0% { opacity: 1; transform: translate(107%, 0); top: -100%; margin-top: 50% }
+  100% { transform: translate(95%, 0); top: -100%; margin-top: 50% }
+}
+@keyframes p-left-tooltip-in {
+  0% { transform: translate(-95%, 0); top: -100%; margin-top: 50%  }
+  100% { opacity: 1; transform: translate(-107%, 0); top: -100%; margin-top: 50%  }
+}
+@keyframes p-left-tooltip-out {
+  0% { opacity: 1; transform: translate(-107%, 0); top: -100%; margin-top: 50%  }
+  100% { transform: translate(-95%, 0); top: -100%; margin-top: 50%  }
+}
+@keyframes p-top-left-tooltip-in {
+  0% { transform: translate(-95%, -90%) }
+  100% { opacity: 1; transform: translate(-105%, -115%) }
+}
+@keyframes p-top-left-tooltip-out {
+  0% { opacity: 1; transform: translate(-105%, -115%) }
+  100% { transform: translate(-95%, -90%) }
+}
+@keyframes p-top-right-tooltip-in {
+  0% { transform: translate(95%, -90%) }
+  100% { opacity: 1; transform: translate(105%, -115%) }
+}
+@keyframes p-top-right-tooltip-out {
+  0% { opacity: 1; transform: translate(105%, -115%) }
+  100% { transform: translate(95%, -90%) }
+}
+@keyframes p-bottom-left-tooltip-in {
+  0% { transform: translate(-90%, 80%) }
+  100% { opacity: 1; transform: translate(-106%, 90%) }
+}
+@keyframes p-bottom-left-tooltip-out {
+  0% { opacity: 1; transform: translate(-106%, 90%) }
+  100% { transform: translate(-90%, 80%) }
+}
+@keyframes p-bottom-right-tooltip-in {
+  0% { transform: translate(90%, 80%) }
+  100% { opacity: 1; transform: translate(106%, 90%) }
+}
+@keyframes p-bottom-right-tooltip-out {
+  0% { opacity: 1; transform: translate(106%, 90%) }
+  100% { transform: translate(90%, 80%) }
+}
+.p-top-tooltip-in { left: 0; animation: p-top-tooltip-in 0.3s normal both }
+.p-top-tooltip-out { left: 0; animation: p-top-tooltip-out 0.3s normal both }
+.p-top-center-tooltip-in { left: 0; animation: p-top-center-tooltip-in 0.3s normal both }
+.p-top-center-tooltip-out { left: 0; animation: p-top-center-tooltip-out 0.3s normal both }
+.p-top-left-tooltip-in { left: 0; animation: p-top-left-tooltip-in 0.3s normal both }
+.p-top-left-tooltip-out { left: 0; animation: p-top-left-tooltip-out 0.3s normal both }
+.p-top-right-tooltip-in { right: 0; animation: p-top-right-tooltip-in 0.3s normal both }
+.p-top-right-tooltip-out { right: 0; animation: p-top-right-tooltip-out 0.3s normal both }
+.p-right-tooltip-in { right: 0; animation: p-right-tooltip-in 0.3s normal both }
+.p-right-tooltip-out { right: 0; animation: p-right-tooltip-out 0.3s normal both }
+.p-left-tooltip-in { left: 0; animation: p-left-tooltip-in 0.3s normal both }
+.p-left-tooltip-out { left: 0; animation: p-left-tooltip-out 0.3s normal both }
+.p-bottom-tooltip-in { left: 0; animation: p-bottom-tooltip-in 0.3s normal both }
+.p-bottom-tooltip-out { left: 0; animation: p-bottom-tooltip-out 0.3s normal both }
+.p-bottom-center-tooltip-in { left: 0; animation: p-bottom-center-tooltip-in 0.3s normal both }
+.p-bottom-center-tooltip-out { left: 0; animation: p-bottom-center-tooltip-out 0.3s normal both }
+.p-bottom-left-tooltip-in { left: 0; animation: p-bottom-left-tooltip-in 0.3s normal both }
+.p-bottom-left-tooltip-out { left: 0; animation: p-bottom-left-tooltip-out 0.3s normal both }
+.p-bottom-right-tooltip-in { right: 0; animation: p-bottom-right-tooltip-in 0.3s normal both }
+.p-bottom-right-tooltip-out { right: 0; animation: p-bottom-right-tooltip-out 0.3s normal both }

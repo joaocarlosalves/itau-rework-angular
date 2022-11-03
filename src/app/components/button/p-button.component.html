@@ -1,0 +1,35 @@
+<button #button class='p-button pointer flex centered row-gap-10px {{ css }}'
+  [type]='type'
+  [disabled]='dis'
+  [PootaColor]="cl"
+  [hover-color]="hvCl"
+  [PootaBackground]="bg"
+  [hover-background]="hvBg"
+  [PootaBorder]="bd"
+  [rounded]="rd"
+  [full-rounded]="frd"
+  [solid]="sl"
+  [dotted]="dt"
+  [dashed]="ds"
+  [border-width]="bdWd"
+  [border-style]="bdSt"
+  [border-color]="bdCl"
+  [border-radius]="bdRd"
+  [hover-border]="hvBd"
+  [hover-border-width]="hvBdWd"
+  [hover-border-style]="hvBdSt"
+  [hover-border-color]="hvBdCl"
+  [hover-border-radius]="hvBdRd"
+  [ngClass]='classList'
+  [ngStyle]='getStyles()'
+  (click)='!dis && clicked.emit(true)'>
+  <span class='text-center width-fit height-min mt-1px'>{{ text }}<ng-content></ng-content></span>
+  <p-icon
+    *ngIf='icon'
+    [solid]='!ric && !v4ic'
+    [regular]='ric'
+    [v4]='v4ic'
+    [icon]='icon'
+    [style.color]='onHover ? "var(--"+ hvIcCl +")" : "var(--"+ ic +")"'>
+  </p-icon>
+</button>

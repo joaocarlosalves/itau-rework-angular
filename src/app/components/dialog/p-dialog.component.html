@@ -1,0 +1,11 @@
+<div class="p-mask" [ngClass]="maskClasses">
+  <dialog
+    class="p-dialog {{ css }}
+    {{ isOut ? 'p-dialog-out' : 'p-dialog-in' }}"
+    [class.rounded]="rounded"
+    [ngStyle]='getStyles()' #dialog>
+    <ng-content [select]="header"></ng-content>
+    <ng-content></ng-content>
+    <ng-content [select]="footer"></ng-content>
+  </dialog>
+</div>

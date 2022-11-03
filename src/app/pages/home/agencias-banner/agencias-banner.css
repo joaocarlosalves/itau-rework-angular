@@ -1,0 +1,23 @@
+.agencias-banner {
+  height: 35%;
+  max-height: 350px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.agencias-banner-box {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(2px);
+  width: 100%;
+}
+
+.input-busca-agencia {
+  width: 80%;
+  color: var(--orange-20);
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.input-busca-agencia::placeholder { color: var(--orange-20) }

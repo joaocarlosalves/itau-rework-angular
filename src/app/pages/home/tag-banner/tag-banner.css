@@ -1,0 +1,14 @@
+.tag-banner {
+  height: 42%;
+  max-height: 450px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.tag-banner-box {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .6);
+  backdrop-filter: blur(2px) grayscale(.7);
+  width: 50%;
+}
